@@ -3,8 +3,7 @@ async function getFetchCurrencies() {
   try {
     const response = await fetch(url);
     const data = await response.json();
-    const currencies = Object.keys(data);
-    currencies.splice(1, 1);
+    const currencies = data;
     return currencies;
   } catch (error) {
     return error;
