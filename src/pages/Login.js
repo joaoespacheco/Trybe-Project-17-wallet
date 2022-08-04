@@ -19,7 +19,6 @@ class Login extends React.Component {
   };
 
   handleClickLogin = () => {
-    console.log('clicou');
     const { email } = this.state;
     const { dispatchUserLogin, history } = this.props;
     dispatchUserLogin(email);
