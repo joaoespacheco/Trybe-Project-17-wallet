@@ -3,7 +3,6 @@ import { screen } from '@testing-library/react';
 import Wallet from '../pages/Wallet'
 import {renderWithRouterAndRedux} from './helpers/renderWith';
 
-
 describe('Conjunto de teste relacionados a tela wallet', () => {
   test('Verificando se os elementos do componente Header são renderizados',
   () => {
