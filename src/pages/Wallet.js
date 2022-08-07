@@ -21,7 +21,9 @@ class Wallet extends React.Component {
         <WalletForm
           { ...this.props }
         />
-        <Table />
+        <Table
+          { ...this.props }
+        />
       </main>
     );
   }
