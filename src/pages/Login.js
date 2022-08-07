@@ -62,6 +62,7 @@ class Login extends React.Component {
           </label>
           <button
             type="button"
+            data-testid="login-button"
             disabled={ buttonLockStatus }
             onClick={ this.handleClickLogin }
           >

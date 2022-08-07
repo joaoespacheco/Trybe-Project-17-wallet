@@ -126,6 +126,7 @@ export default class WalletForm extends Component {
         <button
           type="button"
           onClick={ this.handleExpenses }
+          data-testid="add-button"
         >
           Adicionar despesa
         </button>
