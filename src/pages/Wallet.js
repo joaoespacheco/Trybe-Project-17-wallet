@@ -4,7 +4,11 @@ import PropTypes from 'prop-types';
 import Header from '../components/Header';
 import WalletForm from '../components/WalletForm';
 import Table from '../components/Table';
-import { getCurrenciesThunk, getExchangeRatesThunk } from '../redux/actions';
+import {
+  getCurrenciesThunk,
+  getExchangeRatesThunk,
+  updateExpenses,
+} from '../redux/actions';
 
 class Wallet extends React.Component {
   componentDidMount() {
@@ -39,6 +43,7 @@ const mapStateToProps = (state) => ({
 const mapDispatchToProps = (dispatch) => ({
   getCurrencies: () => dispatch(getCurrenciesThunk()),
   getExpenses: (expense) => dispatch(getExchangeRatesThunk(expense)),
+  updateExpenses: (expenses) => dispatch(updateExpenses(expenses)),
 });
 
 Wallet.propTypes = {

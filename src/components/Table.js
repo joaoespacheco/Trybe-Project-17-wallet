@@ -2,6 +2,16 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
 export default class Table extends Component {
+  handleDeleteExpense = ({ target: { name } }) => {
+    const { expenses, updateExpenses } = this.props;
+    const newExpenses = expenses.filter(({ id }) => id !== Number(name));
+    console.log(newExpenses);
+    // newExpenses.forEach((expense, index) => {
+    //   expense.id = index;
+    // });
+    updateExpenses(newExpenses);
+  }
+
   render() {
     const { expenses } = this.props;
     return (
@@ -46,7 +56,21 @@ export default class Table extends Component {
                       }
                     </td>
                     <td>Real</td>
-                    <td>Editar/Excluir</td>
+                    <td>
+                      <button
+                        type="button"
+                      >
+                        Editar
+                      </button>
+                      <button
+                        name={ id }
+                        type="button"
+                        data-testid="delete-btn"
+                        onClick={ this.handleDeleteExpense }
+                      >
+                        Excluir
+                      </button>
+                    </td>
                   </tr>
                 ))}
               </tbody>
@@ -61,4 +85,5 @@ export default class Table extends Component {
 
 Table.propTypes = {
   expenses: PropTypes.arrayOf(PropTypes.any).isRequired,
+  updateExpenses: PropTypes.func.isRequired,
 };

@@ -4,6 +4,7 @@ export const USER_LOGIN = 'USER_LOGIN';
 export const GET_CURRENCIES = 'GET_CURRENCIES';
 export const GET_EXCHANGE_RATES = 'EXCHANGE_RATES';
 export const SAVE_EXPENSE = 'SAVE_EXPENSE';
+export const UPDATE_EXPENSE = 'UPDATE_EXPENSE';
 
 export const loginAction = (email) => ({
   type: USER_LOGIN,
@@ -34,3 +35,8 @@ export const getExchangeRatesThunk = (expense) => async (dispatch) => {
   delete exchangeRates.USDT;
   dispatch(getExpenses(exchangeRates, expense));
 };
+
+export const updateExpenses = (expenses) => ({
+  type: UPDATE_EXPENSE,
+  expenses,
+});
