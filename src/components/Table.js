@@ -16,22 +16,22 @@ export default class Table extends Component {
     const { expenses } = this.props;
     return (
       <section>
-        { expenses.length > 0
-          ? (
-            <table>
-              <thead>
-                <tr>
-                  <th>Descrição</th>
-                  <th>Tag</th>
-                  <th>Método de pagamento</th>
-                  <th>Valor</th>
-                  <th>Moeda</th>
-                  <th>Câmbio utilizado</th>
-                  <th>Valor convertido</th>
-                  <th>Moeda de conversão</th>
-                  <th>Editar/Excluir</th>
-                </tr>
-              </thead>
+        <table>
+          <thead>
+            <tr>
+              <th>Descrição</th>
+              <th>Tag</th>
+              <th>Método de pagamento</th>
+              <th>Valor</th>
+              <th>Moeda</th>
+              <th>Câmbio utilizado</th>
+              <th>Valor convertido</th>
+              <th>Moeda de conversão</th>
+              <th>Editar/Excluir</th>
+            </tr>
+          </thead>
+          { expenses.length > 0
+            ? (
               <tbody>
                 {expenses.map((
                   {
@@ -74,10 +74,10 @@ export default class Table extends Component {
                   </tr>
                 ))}
               </tbody>
-            </table>
-          ) : (
-            <h3>Digite uma despesa</h3>
-          )}
+            ) : (
+              <h3>Digite uma despesa</h3>
+            )}
+        </table>
       </section>
     );
   }
