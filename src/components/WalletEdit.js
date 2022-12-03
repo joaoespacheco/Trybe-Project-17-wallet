@@ -51,7 +51,6 @@ export default class WalletEdit extends Component {
 
   render() {
     const { value, description, currency, method, tag, exchangeRates } = this.state;
-    console.log(Object.keys(exchangeRates));
     return (
       <section>
         <label htmlFor="value">
