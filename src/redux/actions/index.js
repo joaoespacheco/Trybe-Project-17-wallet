@@ -5,6 +5,7 @@ export const GET_CURRENCIES = 'GET_CURRENCIES';
 export const GET_EXCHANGE_RATES = 'EXCHANGE_RATES';
 export const SAVE_EXPENSE = 'SAVE_EXPENSE';
 export const UPDATE_EXPENSE = 'UPDATE_EXPENSE';
+export const EDIT_EXPENSE = 'EDIT_EXPENSE';
 
 export const loginAction = (email) => ({
   type: USER_LOGIN,
@@ -39,4 +40,9 @@ export const getExchangeRatesThunk = (expense) => async (dispatch) => {
 export const updateExpenses = (expenses) => ({
   type: UPDATE_EXPENSE,
   expenses,
+});
+
+export const editExpense = (status, values) => ({
+  type: EDIT_EXPENSE,
+  edit: { status, values },
 });

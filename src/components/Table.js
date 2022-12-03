@@ -5,11 +5,13 @@ export default class Table extends Component {
   handleDeleteExpense = ({ target: { name } }) => {
     const { expenses, updateExpenses } = this.props;
     const newExpenses = expenses.filter(({ id }) => id !== Number(name));
-    console.log(newExpenses);
-    // newExpenses.forEach((expense, index) => {
-    //   expense.id = index;
-    // });
     updateExpenses(newExpenses);
+  }
+
+  handleEditExpense = ({ target: { name } }) => {
+    const { editExpense, expenses } = this.props;
+    const expenseValues = expenses[name];
+    editExpense(true, expenseValues);
   }
 
   render() {
@@ -58,7 +60,10 @@ export default class Table extends Component {
                     <td>Real</td>
                     <td>
                       <button
+                        name={ id }
                         type="button"
+                        data-testid="edit-btn"
+                        onClick={ this.handleEditExpense }
                       >
                         Editar
                       </button>
@@ -75,7 +80,13 @@ export default class Table extends Component {
                 ))}
               </tbody>
             ) : (
-              <h3>Digite uma despesa</h3>
+              <tbody>
+                <tr>
+                  <td>
+                    Digite uma despesa
+                  </td>
+                </tr>
+              </tbody>
             )}
         </table>
       </section>
@@ -86,4 +97,5 @@ export default class Table extends Component {
 Table.propTypes = {
   expenses: PropTypes.arrayOf(PropTypes.any).isRequired,
   updateExpenses: PropTypes.func.isRequired,
+  editExpense: PropTypes.func.isRequired,
 };
