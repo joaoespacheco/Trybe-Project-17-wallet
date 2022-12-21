@@ -14,7 +14,7 @@ Dentro da carteira o usuário poderá:
 Todos os dados de cotação das moedas foram obtidos através da [Awesome API](https://docs.awesomeapi.com.br/api-de-moedas).
 
 A aplicação também conta com o uso da biblioteca <strong>Redux</strong> para o gerenciamento do estado global e uma cobertura de testes superior a 90%.
-</br>
+
 </br>
 <details>
 <summary><strong>Desempenho</strong></summary>
@@ -42,6 +42,7 @@ Aprovado com 100% de desempenho em todos os requisitos
 <summary><strong>Visualizar projeto</strong></summary>
 :construction: Área em construção ! :construction:
 </details>
+</br>
 
 ## 🤹🏽 Habilidades Desenvolvidas:
 * Desenvolver uma aplicação react utilizando um gerenciador de estado global
@@ -55,7 +56,7 @@ Aprovado com 100% de desempenho em todos os requisitos
 * Fazer requisições e consumir dados vindos de uma API
 * Utilizar <strong>React Router</strong>
 * Realizar testes utilizando <strong>React Testing Library</strong>
-
+</br>
 
 ## 🧰 Ferramentas:
 * HTML
@@ -65,6 +66,7 @@ Aprovado com 100% de desempenho em todos os requisitos
   * React Router
   * React Testing Library
   * Redux
+</br>
 
 ## 📝 Desenvolvido por:
 * [João Emanuel Soares Pacheco](https://github.com/joaoespacheco)
