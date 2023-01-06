@@ -1,0 +1,16 @@
+.wallet-form-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 2rem;
+
+  &-content {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba($color: $fifth-color, $alpha: 0.15);
+    border-radius: 1rem;
+    min-height: 50rem;
+    width: 105rem;
+    padding-bottom: 1.5rem;
+  }
+}

@@ -1,0 +1,83 @@
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &-content {
+    display: flex;
+    flex-direction: column;
+    height: 25rem;
+    width: 50rem;
+
+    .login-content{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      border-radius: 1.5rem;
+      background-color: $second-color;
+      border: 0.2rem solid $fifth-color;
+      padding: 2rem;
+      row-gap: 1rem;
+      width: 100%;
+      height: 100%;
+
+      h1 {
+        color: $white-color;
+        font-size: 7.5rem;
+        padding-bottom: 1.5rem;
+      }
+
+      >div {
+        display: flex;
+        column-gap: .5rem;
+
+        .login-content-form {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: flex-end;
+          row-gap: 0.25rem;
+
+          label {
+            width: 25rem;
+            background-color: $fifth-color;
+            border-radius: 1rem;
+
+            input {
+              background-color: $fifth-color;
+              width: 100%;
+              outline: none;
+              border: 0.15rem solid transparent;
+              font-size: 1.5rem;
+              padding: 0.5rem 0.8rem;
+              border-radius: 1rem;
+            }
+          }
+        }
+
+        button {
+          background-color: $fifth-color;
+          border: none;
+          border-radius: 1rem;
+          color: $second-color;
+          font-size: 2rem;
+          font-weight: 700;
+          height: 100%;
+          width: 10rem;
+
+          &:disabled {
+            background-color: $second-color;
+            border: 0.15rem solid $fifth-color;
+            color: $fifth-color;
+            opacity: 0.3;
+          }
+
+          &:enabled:hover {
+            box-shadow: 0 0 0.5rem $fifth-color;
+          }
+        }
+      }
+    }
+  }
+}

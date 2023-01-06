@@ -52,9 +52,9 @@ export default class WalletEdit extends Component {
   render() {
     const { value, description, currency, method, tag, exchangeRates } = this.state;
     return (
-      <section>
+      <div className="wallet-edit-content">
         <label htmlFor="value">
-          Valor:
+          <p>Valor:</p>
           <input
             id="value"
             type="number"
@@ -65,7 +65,7 @@ export default class WalletEdit extends Component {
           />
         </label>
         <label htmlFor="description">
-          Descrição:
+          <p>Descrição:</p>
           <input
             id="description"
             type="text"
@@ -136,9 +136,9 @@ export default class WalletEdit extends Component {
           onClick={ this.handleExpenses }
           data-testid="add-button"
         >
-          Editar despesa
+          Salvar
         </button>
-      </section>
+      </div>
     );
   }
 }

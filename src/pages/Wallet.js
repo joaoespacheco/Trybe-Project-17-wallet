@@ -21,23 +21,27 @@ class Wallet extends React.Component {
   render() {
     const { edit } = this.props;
     return (
-      <main>
+      <div className="wallet-container">
         <Header
           { ...this.props }
         />
-        {edit.status ? (
-          <WalletEdit
-            { ...this.props }
-          />
-        ) : (
-          <WalletForm
-            { ...this.props }
-          />
-        )}
-        <Table
-          { ...this.props }
-        />
-      </main>
+        <main className="wallet-form-container">
+          <div className="wallet-form-container-content">
+            {edit.status ? (
+              <WalletEdit
+                { ...this.props }
+              />
+            ) : (
+              <WalletForm
+                { ...this.props }
+              />
+            )}
+            <Table
+              { ...this.props }
+            />
+          </div>
+        </main>
+      </div>
     );
   }
 }

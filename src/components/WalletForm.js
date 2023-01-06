@@ -44,9 +44,9 @@ export default class WalletForm extends Component {
     const { currencies } = this.props;
     const { value, description, currency, method, tag } = this.state;
     return (
-      <section>
+      <div className="wallet-form-content">
         <label htmlFor="value">
-          Valor:
+          <p>Valor:</p>
           <input
             id="value"
             type="number"
@@ -57,7 +57,7 @@ export default class WalletForm extends Component {
           />
         </label>
         <label htmlFor="description">
-          Descrição:
+          <p>Descrição:</p>
           <input
             id="description"
             type="text"
@@ -130,7 +130,7 @@ export default class WalletForm extends Component {
         >
           Adicionar despesa
         </button>
-      </section>
+      </div>
     );
   }
 }
