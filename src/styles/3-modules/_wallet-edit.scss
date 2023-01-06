@@ -1,0 +1,76 @@
+.wallet-edit-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $second-color;
+  height: 3rem;
+  padding: 2rem;
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  column-gap: 0.8rem;
+  width: 100%;
+  box-shadow: 0 0 1rem $fifth-color;
+
+  label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 0.5rem;
+
+    p {
+      color: $white-color;
+      font-size: 1.25rem;
+    }
+
+    input {
+      outline: none;
+      font-size: 1.25rem;
+      padding: 0.2rem 1rem;
+      border-radius: 2rem;
+      border: 0.1rem solid transparent;
+
+      &:focus {
+        box-shadow: 0 0 0.5rem $fourth-color;
+      }
+    }
+
+    select {
+      text-align: center;
+      padding: 0.2rem 1rem;
+      font-size: 1.25rem;
+      border-radius: 1rem;
+      border: 0.1rem solid transparent;
+
+      &:focus {
+        box-shadow: 0 0 0.5rem $fourth-color;
+        outline: none;
+      }
+
+      &:hover:focus {
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+      }
+
+      option {
+        padding: 0.2rem 0;
+        text-align: left;
+        font-size: 1.25rem;
+      }
+    }
+  }
+
+  button {
+    border: 0.1rem solid transparent;
+    color: $white-color;
+    font-weight: 600;
+    background-color: $fourth-color;
+    padding: 0.2rem 0.5rem;
+    font-size: 1.5rem;
+    border-radius: 2rem;
+    width: 15rem;
+
+    &:hover {
+      box-shadow: 0 0 0.5rem $fourth-color;
+    }
+  }
+}

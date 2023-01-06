@@ -17,7 +17,7 @@ export default class Table extends Component {
   render() {
     const { expenses } = this.props;
     return (
-      <section>
+      <div className="table-content">
         <table>
           <thead>
             <tr>
@@ -89,7 +89,7 @@ export default class Table extends Component {
               </tbody>
             )}
         </table>
-      </section>
+      </div>
     );
   }
 }

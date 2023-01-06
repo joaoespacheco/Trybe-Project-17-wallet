@@ -1,0 +1,72 @@
+.table-content {
+  width: 100%;
+
+  table {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+    thead {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+
+      tr {
+        padding: 0.25rem 1rem 0.75rem 0.25rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        border-bottom: 0.1rem solid $fifth-color;
+        flex-grow: 1;
+
+        th {
+          width: 10rem;
+          font-size: 1.5rem;
+          color: $white-color;
+        }
+      }
+    }
+
+    tbody {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      width: 100%;
+
+      tr {
+        padding: 0.75rem 0.25rem 0.75rem 0.25rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        border-bottom: 0.1rem solid $fifth-color;
+
+        td {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          column-gap: 0.25rem;
+          text-align: center;
+          width: 11.5rem;
+          font-size: 1.25rem;
+          color: $white-color;
+
+          button {
+            border: 0.1rem solid transparent;
+            background-color: $fourth-color;
+            border-radius: 1rem;
+            font-size: 1.25rem;
+            font-weight: 600;
+            color: $white-color;
+            padding: 0.2rem 0.5rem;
+
+            &:hover {
+              box-shadow: 0 0 0.5rem $fourth-color;
+            }
+          }
+        }
+      }
+    }
+  }
+}
