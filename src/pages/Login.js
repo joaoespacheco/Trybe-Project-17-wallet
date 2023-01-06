@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-max-depth */
 import React from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
@@ -38,37 +39,44 @@ class Login extends React.Component {
   render() {
     const { email, password, buttonLockStatus } = this.state;
     return (
-      <main>
-        <section>
-          <label htmlFor="email">
-            <input
-              id="email"
-              type="text"
-              data-testid="email-input"
-              placeholder="Digite seu email"
-              value={ email }
-              onChange={ this.stateHandleChanger }
-            />
-          </label>
-          <label htmlFor="password">
-            <input
-              id="password"
-              type="text"
-              data-testid="password-input"
-              placeholder="Digite sua senha"
-              value={ password }
-              onChange={ this.stateHandleChanger }
-            />
-          </label>
-          <button
-            type="button"
-            data-testid="login-button"
-            disabled={ buttonLockStatus }
-            onClick={ this.handleClickLogin }
-          >
-            Entrar
-          </button>
-        </section>
+      <main className="login-container">
+        <div className="login-container-content">
+          <div className="login-content">
+            <h1>TrybeWallet</h1>
+            <div>
+              <div className="login-content-form">
+                <label htmlFor="email">
+                  <input
+                    id="email"
+                    type="text"
+                    data-testid="email-input"
+                    placeholder="Digite seu email..."
+                    value={ email }
+                    onChange={ this.stateHandleChanger }
+                  />
+                </label>
+                <label htmlFor="password">
+                  <input
+                    id="password"
+                    type="text"
+                    data-testid="password-input"
+                    placeholder="Digite sua senha..."
+                    value={ password }
+                    onChange={ this.stateHandleChanger }
+                  />
+                </label>
+              </div>
+              <button
+                type="button"
+                data-testid="login-button"
+                disabled={ buttonLockStatus }
+                onClick={ this.handleClickLogin }
+              >
+                Entrar
+              </button>
+            </div>
+          </div>
+        </div>
       </main>
     );
   }
