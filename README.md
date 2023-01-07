@@ -19,6 +19,9 @@ A aplicação também conta com o uso da biblioteca <strong>Redux</strong> para 
 <details>
 <summary><strong>Desempenho</strong></summary>
 Aprovado com 100% de desempenho em todos os requisitos
+
+![image](https://user-images.githubusercontent.com/99846604/211172644-69c986ed-6eef-468e-aa7e-a698683e0bac.png)
+
 </details>
 
 <details>
@@ -40,8 +43,44 @@ Aprovado com 100% de desempenho em todos os requisitos
 
 <details>
 <summary><strong>Visualizar projeto</strong></summary>
-:construction: Área em construção ! :construction:
+
+### Tela de login:
+
+![image](https://user-images.githubusercontent.com/99846604/211172879-c7063d37-17ed-4cc3-9edf-4df863f687d6.png)
+
+### Tela principal:
+
+![image](https://user-images.githubusercontent.com/99846604/211172940-fb7518bf-ef0b-4085-9862-2e43e0b1ba4c.png)
+
 </details>
+</br>
+
+## ⚙️ Execução
+
+Faça o clone deste repositório com o seguinte comando:
+
+        git clone git@github.com:joaoespacheco/Trybe-Project-16-tests-with-react-testing-library.git
+
+Para exercutar o projeto utilize o comando abaixo para instalar as dependências:
+
+        npm install
+
+Inicie a aplicação com o comando abaixo:
+
+        npm start
+        
+Para exeutar os testes deve-se utilizar o seguinte comando:
+
+        npm test
+
+Caso queira executar um teste específico, rode o comando abaixo:
+
+        npm test <nome-do-arquivo>
+
+Para executar e verificar a cobertura de testes, rode o comando abaixo:
+
+        npm run test-coverage
+
 </br>
 
 ## 🤹🏽 Habilidades Desenvolvidas:
@@ -61,6 +100,7 @@ Aprovado com 100% de desempenho em todos os requisitos
 ## 🧰 Ferramentas:
 * HTML
 * CSS
+  * SASS
 * JavaScript
 * React
   * React Router
