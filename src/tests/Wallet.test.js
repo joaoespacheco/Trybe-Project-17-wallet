@@ -84,7 +84,7 @@ describe('Conjunto de teste relacionados a tela wallet', () => {
     expect(await screen.findByRole('cell', { name: '10.00' })).toBeInTheDocument();
 
     const headerTotalField = screen.getByTestId("total-field")
-    expect(headerTotalField).toHaveTextContent('47.53')
+    expect(headerTotalField).toHaveTextContent('Valor Total: R$ 47,53')
 
     const editButton = screen.getByTestId('edit-btn');
     expect(editButton).toBeInTheDocument();

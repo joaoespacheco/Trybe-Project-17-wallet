@@ -27,7 +27,7 @@
     "cy:open": "cypress open",
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
+    "test": "react-scripts test ./src",
     "eject": "react-scripts eject",
     "test-coverage": "react-scripts test --coverage --watchAll=false",
     "lint": "eslint --no-inline-config --no-error-on-unmatched-pattern -c .eslintrc.json . --ext .js, .jsx"
