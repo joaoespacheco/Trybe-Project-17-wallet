@@ -59,7 +59,7 @@ Aprovado com 100% de desempenho em todos os requisitos
 
 Faça o clone deste repositório com o seguinte comando:
 
-        git clone git@github.com:joaoespacheco/Trybe-Project-16-tests-with-react-testing-library.git
+        git clone git@github.com:joaoespacheco/Trybe-Project-17-wallet.git
 
 Para exercutar o projeto utilize o comando abaixo para instalar as dependências:
 
