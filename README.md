@@ -42,7 +42,7 @@ Aprovado com 100% de desempenho em todos os requisitos
 </details>
 
 <details>
-<summary><strong>Visualizar projeto</strong></summary>
+<summary><strong>Imagens do projeto</strong></summary>
 
 ### Tela de login:
 
