@@ -16,6 +16,7 @@
     justify-content: center;
     align-items: center;
     column-gap: 0.5rem;
+    background-color: $white-color;
 
     p {
       color: $white-color;
@@ -28,6 +29,7 @@
       padding: 0.2rem 1rem;
       border-radius: 2rem;
       border: 0.1rem solid transparent;
+      background-color: $white-color;
 
       &:focus {
         box-shadow: 0 0 0.5rem $fourth-color;
@@ -55,6 +57,7 @@
         padding: 0.2rem 0;
         text-align: left;
         font-size: 1.25rem;
+        background-color: #FFF;
       }
     }
   }
