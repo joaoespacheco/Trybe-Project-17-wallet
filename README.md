@@ -42,7 +42,7 @@ Aprovado com 100% de desempenho em todos os requisitos
 </details>
 
 <details>
-<summary><strong>Visualizar projeto</strong></summary>
+<summary><strong>Imagens do projeto</strong></summary>
 
 ### Tela de login:
 
@@ -53,15 +53,20 @@ Aprovado com 100% de desempenho em todos os requisitos
 ![image](https://user-images.githubusercontent.com/99846604/211172940-fb7518bf-ef0b-4085-9862-2e43e0b1ba4c.png)
 
 </details>
+
+</br>
+
+### [👨‍💻 Clique aqui para acessar o projeto em seu navegador](https://wallet-joaoespacheco.vercel.app/) 
+
 </br>
 
 ## ⚙️ Execução
 
 Faça o clone deste repositório com o seguinte comando:
 
-        git clone git@github.com:joaoespacheco/Trybe-Project-16-tests-with-react-testing-library.git
+        git clone git@github.com:joaoespacheco/Trybe-Project-17-wallet.git
 
-Para exercutar o projeto utilize o comando abaixo para instalar as dependências:
+Dentro da pasta raiz do projeto, instale as dependências com o seguinte comando:
 
         npm install
 
